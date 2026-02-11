@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brain Region Map</title>
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Brain Tau Distribution</h2>
+      <p>Hover over regions to explore tau concentration</p>
+    </div>
+
+    <div class="brain-map">
+      <img src="assets/img/brain-map.png">
+
+      <!-- Regions -->
+      <div class="region" style="top:40%; left:45%; width:60px; height:60px"
+           onclick="showRegion('Hippocampus')"></div>
+
+      <div class="region" style="top:20%; left:55%; width:50px; height:50px"
+           onclick="showRegion('Frontal Lobe')"></div>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
