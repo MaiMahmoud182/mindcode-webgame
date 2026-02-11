@@ -1,0 +1,162 @@
+:root {
+  --primary: #4b7bec;
+  --secondary: #20bf6b;
+  --accent: #a55eea;
+  --dark: #0f172a;
+  --light: #f1f5f9;
+  --text: #334155;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--text);
+}
+
+/* ================= HEADER ================= */
+.header {
+  background: rgba(15, 23, 42, 0.9);
+  padding: 15px 0;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero video,
+.brain-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(15,23,42,0.9),
+    rgba(75,123,236,0.5)
+  );
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.btn-get-started {
+  padding: 12px 30px;
+  background: var(--primary);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-get-started:hover {
+  background: var(--accent);
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  color: var(--primary);
+  font-size: 2.5rem;
+}
+
+/* ================= CARDS ================= */
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 40px 80px rgba(75,123,236,0.3);
+}
+
+/* ================= SIMULATION ================= */
+.slider-box {
+  margin: 20px 0;
+}
+
+.slider-box label {
+  font-weight: 600;
+}
+
+input[type=range] {
+  width: 100%;
+}
+
+/* ================= BRAIN MAP ================= */
+.brain-map {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.brain-map img {
+  width: 100%;
+}
+
+.region {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(165,94,234,0.4);
+  transition: 0.3s;
+}
+
+.region:hover {
+  background: rgba(75,123,236,0.7);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: var(--dark);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
